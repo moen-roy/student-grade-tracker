@@ -51,7 +51,7 @@ function renderAdminView() {
     })
     .catch(err => console.error("Failed to fetch student data:", err));
 }
-  // student section will run if role is student
+  // student section will run if role is
 function renderStudentView() {
   const welcome = document.querySelector(".welcome");
   const usernameEl = document.getElementById("username");
