@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <section class="student-dashboard" style="display: none;">
+    <h2 class="welcome"></h2>
+    <img id="student-img" src="" alt="Student Image" />
+    <p>Username: <span id="username"></span></p>
+
+    <label for="subject">Subject:</label>
+    <select id="subject">
+      <option value="Maths">Maths</option>
+      <option value="English">English</option>
+      <option value="Kiswahili">Kiswahili</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Physics">Physics</option>
+      <option value="Biology">Biology</option>
+      <option value="Geography">Geography</option>
+      <option value="CRE">CRE</option>
+      <option value="Bst">Bst</option>
+      <option value="Comp">Computer</option>
+      <option value="History">History</option>
+    </select>
+
+    <p><strong>Score:</strong> <input type="number" id="score" /></p>
+    <p class="status"></p>
+
+    <button onclick="updateStudent()">Update Info</button>
+    <button onclick="logout()" class="logout">Logout</button>
+  </section>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
